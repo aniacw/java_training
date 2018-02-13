@@ -1,6 +1,6 @@
 package pl.anna.calculator;
 
-public class Calculator {
+public class Calculator implements CalculatorInterface {
     private int number1;
     private int number2;
 
