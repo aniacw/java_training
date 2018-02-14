@@ -29,12 +29,12 @@ public class StringOperations {
             return false;
     }
 
-    public String removeLetter(String countryName, String cityName){
-        if(cityName.length()==1){
-            countryName.replace(cityName, "");
+    public String removeLetter(String countryName, String cityName) {
+        String modifiedCountryName = null;
+        if (cityName.length() == 1) {
+            modifiedCountryName = countryName.replace(cityName, "");
         }
-        return countryName;
+        return modifiedCountryName;
+
     }
-
-
 }

@@ -4,20 +4,13 @@ import java.math.BigDecimal;
 
 public class GrossNet {
 
-    private double grossPurchasePrice;
-    private double vatAmount;
+    private BigDecimal netPurchasePrice;
+    private BigDecimal vatAmount = new BigDecimal(1.23);
 
-   BigDecimal decimalGrossPurchasePrice = new BigDecimal(Double.toString(grossPurchasePrice));
-   BigDecimal decimalVatAmount = new BigDecimal(Double.toString(vatAmount));
-
-//    public GrossNet(BigDecimal decimalGrossPurchasePrice, BigDecimal decimalVatAmount) {
-//        this.decimalGrossPurchasePrice = decimalGrossPurchasePrice;
-//        this.decimalVatAmount = decimalVatAmount;
-//    }
-
-    public BigDecimal calculateNet(BigDecimal decimalGrossPurchasePrice, BigDecimal decimalVatAmount){
-       BigDecimal net = decimalGrossPurchasePrice.divide(decimalVatAmount);
-       return net;
+    public GrossNet(BigDecimal netPurchasePrice) {
+        this.netPurchasePrice = new BigDecimal(double);
     }
+
+    BigDecimal gross = netPurchasePrice.multiply(vatAmount);
 
 }
