@@ -6,7 +6,6 @@ public class Main {
     public static void main(String[] args){
         GrossNet grossNet = new GrossNet("58444");
 
-        grossNet.
-
+        System.out.println(grossNet.calculateGross());
     }
 }
