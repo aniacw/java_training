@@ -7,13 +7,13 @@ public class GrossNet {
     private BigDecimal netPurchasePrice;
     private BigDecimal vatAmount = new BigDecimal(0.23);
 
-    public GrossNet(BigDecimal netPurchasePrice) {
-        this.netPurchasePrice = new BigDecimal(double);
+    public GrossNet(Double netPurchasePrice) {
+        this.netPurchasePrice = new BigDecimal(netPurchasePrice);
     }
-
-    BigDecimal vat = netPurchasePrice.multiply(vatAmount);
 
     BigDecimal calculateGross(){
+        BigDecimal vat = netPurchasePrice.multiply(vatAmount);
         return netPurchasePrice.add(vat);
     }
+
 }
