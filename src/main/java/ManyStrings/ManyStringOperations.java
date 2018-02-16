@@ -14,7 +14,7 @@ public class ManyStringOperations {
         this.myString = myString;
     }
 
-    public String concatenate(List<String> myString) {
+    public String concatenate() {
         String helpWord = "";
         for (int i = 0; i < myString.size(); i++) {
             helpWord += myString.get(i);
@@ -22,17 +22,18 @@ public class ManyStringOperations {
         return helpWord;
     }
 
-//    public boolean contains(String theLetter) {
-//        for(int i = 0; i<myString.size(); i++) {
-//            if (myString.get(i).contains(theLetter)) {
-//                System.out.println("The word: "+ myString.get(i) + "contains the searched letter");
-//                return true;
-//            } else {
-//                System.out.println("This word doesn't contain searched letter");
-//                return false;
-//            }
-//        }
-//    }
+    public boolean contains() {
+        boolean searchResult = false;
+        for(int i = 0; i<myString.size(); i++) {
+            if (myString.get(i).contains(theLetter)) {
+                System.out.println("The word: "+ myString.get(i) + "contains the searched letter");
+                searchResult= true;
+            } else {
+                System.out.println("This word doesn't contain searched letter");
+            }
+        }
+        return searchResult;
+    }
 
     public void setTheLetter(String theLetter) {
         this.theLetter = theLetter;

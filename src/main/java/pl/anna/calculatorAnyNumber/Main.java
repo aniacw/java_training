@@ -12,12 +12,13 @@ public class Main {
         System.out.println("Type your numbers...");
         Scanner scanner = new Scanner(System.in);
 
-        while(scanner.nextInt()!=0) {
-                int newNumber = scanner.nextInt();
-                myListOfNumbers.add(newNumber);
+        Integer readedNumber = 1;
+        while(readedNumber!=0) {
+                readedNumber = scanner.nextInt();
+                myListOfNumbers.add(readedNumber);
             }
-
-        int theSum = calculator.sum(myListOfNumbers);
+        calculator.setNumbers(myListOfNumbers);
+        int theSum = calculator.sum();
         System.out.println(theSum);
     }
 
